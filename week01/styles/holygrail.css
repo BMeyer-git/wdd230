@@ -1,7 +1,7 @@
 body {
     display: grid;
     height: 100vh;
-    grid-template: 100px 50px 1fr auto / 300px 1fr auto;
+    grid-template: auto auto 1fr auto / 1fr 1fr auto;
   }
   
   header {
@@ -12,7 +12,7 @@ body {
 
   nav {
     background: lightseagreen;
-    padding: 2rem;
+    padding: 1rem;
     grid-column: 1 / 4;
   }
 
