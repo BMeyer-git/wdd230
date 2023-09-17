@@ -1,0 +1,27 @@
+@media screen and (min-width: 700px) {
+
+    main {
+        display: grid;
+        grid-template: 1fr / 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+    main h2 {
+        text-align:left;
+    }
+
+    section {
+        grid-column: auto;
+    }
+
+    nav {
+        display:grid;
+        grid-template: 1fr/ 1fr 1fr 1fr 1fr;
+    }
+
+    footer{
+        display:grid;
+        grid-template: 1fr 1fr/ 1fr 1fr;
+    }
+
+}
