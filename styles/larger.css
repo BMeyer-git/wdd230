@@ -25,7 +25,7 @@
         text-align:center;
         padding: .5rem;
         text-decoration: none;
-    };
+    }
 
     footer{
         display:grid;
@@ -36,6 +36,5 @@
         display:none;
     
     }
-
 
 }
