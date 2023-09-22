@@ -11,6 +11,12 @@ header {
     padding: 1em;
 }
 
+header button {
+    position: absolute;
+    right:1em;
+    top: 1em;
+}
+
 nav{ 
     background-color:#545454;
 }
@@ -20,6 +26,10 @@ nav ul {
 }
 
 nav a{
+    display: none;
+}
+
+nav.open a{
     color:white;
     display: block;
     text-align:center;
@@ -33,6 +43,23 @@ nav a:hover{
 
 nav .active{
     background-color: rgba(0,0,0,0.3);
+}
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #27665f;
+	color: white;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
 }
 
 main {
@@ -51,6 +78,10 @@ section{
     grid-column: 1 / 4;
     border: 1px solid #545454;
     background-color: whitesmoke;
+}
+
+.dark section{
+    background-color: #000;
 }
 
 section ul{

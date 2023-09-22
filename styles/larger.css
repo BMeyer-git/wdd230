@@ -19,9 +19,23 @@
         grid-template: 1fr/ 1fr 1fr 1fr 1fr;
     }
 
+    nav a {
+        color:white;
+        display: block;
+        text-align:center;
+        padding: .5rem;
+        text-decoration: none;
+    };
+
     footer{
         display:grid;
         grid-template: 1fr 1fr/ 1fr 1fr;
     }
+
+    #menu {
+        display:none;
+    
+    }
+
 
 }
