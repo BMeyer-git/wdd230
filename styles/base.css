@@ -3,7 +3,7 @@ body{
 }
 
 header {
-    background-color: #3FA296;
+    background-color: #27665f;
     color:white;
     display:grid;
     grid-template-columns: auto 1fr;
@@ -11,8 +11,8 @@ header {
     padding: 1em;
 }
 
-nav{
-    background-color:grey;
+nav{ 
+    background-color:#545454;
 }
 
 nav ul {
@@ -49,7 +49,7 @@ main h2 {
 
 section{
     grid-column: 1 / 4;
-    border: 1px solid grey;
+    border: 1px solid #545454;
     background-color: whitesmoke;
 }
 
@@ -68,14 +68,14 @@ main h2{
 
 h3{
     margin:0;
-    background-color: #3FA296;
+    background-color: #27665f;
     color:white;
     padding:1rem;
     text-align:center;
 }
 
 footer{
-    background-color: #3FA296;
+    background-color: #27665f;
     color:white;
     padding: 0.5em;
 }
