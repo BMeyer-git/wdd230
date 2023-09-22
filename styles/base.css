@@ -11,7 +11,7 @@ header {
     padding: 1em;
 }
 
-header button {
+header #mode {
     position: absolute;
     right:1em;
     top: 1em;
