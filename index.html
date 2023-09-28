@@ -20,7 +20,7 @@
 </head>
 <body>
     <header>
-        <img src="images/braxton.jpg" alt="Braxton Meyer Profile" width="75" height="100">
+        <img src="images/braxton.webp" alt="Braxton Meyer Profile" width="75" height="100" loading="lazy">
         <h1>Braxton Meyer</h1>
         <div id="mode">☑️</div>
     </header>
@@ -33,6 +33,15 @@
     </nav>
 
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 700px)">
+                <img src="images/hero-large.webp" alt="The Boston Temple" width="500" height="250">
+            </picture>
+            <div class="heroiclabel">
+                <p>Boston, Mass. Temple</p>
+            </div>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
             <h3>Learning Activities</h3>
@@ -74,7 +83,10 @@
             <h3>Information</h3>
             <p>Boise, Idaho</p>
             <p>68°F - Cloudy</p>
-            <p>Page Visits: 1</p>
+            <p class="visits"></p>
+        </section>
+        <section id="map" class="card">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7937.646226906905!2d-116.20476204913388!3d43.61456511815882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1695932785838!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" loading="lazy"></iframe>
         </section>
     </main>
     <footer>

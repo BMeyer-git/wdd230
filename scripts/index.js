@@ -9,6 +9,8 @@ modifyrecord.innerHTML = "Last Modification: " + document.lastModified;
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('nav');
 
+const visitsDisplay = document.querySelector(".visits");
+
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
@@ -31,3 +33,17 @@ modeButton.addEventListener("click", () => {
 		modeButton.textContent = "☑️";
 	}
 });
+
+
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+if (numVisits == 0) {
+	visitsDisplay.textContent = "This is your first visit. Congratulations!";
+} else {
+	visitsDisplay.textContent = "Page Visits: " + numVisits;
+}
+
+numVisits++;
+
+
+localStorage.setItem("numVisits-ls", numVisits);
