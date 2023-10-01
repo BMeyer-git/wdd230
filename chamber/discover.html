@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boise Chamber of Commerce</title>
+    <meta name="author" content="Braxton Meyer">
+    <meta name="description" content="The Boise Chamber of Commerce website home page">
+    <meta property="og:title" content="Boise Chamber of Commerce">  
+    <meta property="og:type" content="website">  
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/5/5d/Boise%2C_Idaho_2021.jpg">
+    <meta property="og:url" content="https://bmeyer-git.github.io/wdd230/chamber/index.html">    
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <img src="#" alt="Boise Logo" width="75" height="100">
+        <h1>Boise, Idaho Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <div id="menu"></div>
+        <a href="https://bmeyer-git.github.io/wdd230/chamber/index.html">Home</a>
+        <a class="active" href="https://bmeyer-git.github.io/wdd230/chamber/discover.html">Discover</a>
+        <a href="#">Directory</a>
+        <a href="#">Join</a>
+    </nav>
+    <img id="hero" src="images/hero.webp" alt="A picture of a cityscape">
+    <h1 id="welcome"></h1>
+    <main class="sidebarMain">
+        <div class="sidebar">
+            <section class="card">
+                <h3>Current Events</h3>
+                <p>
+                    <a href="#">Boise fair</a>
+                </p>
+                <p>
+                    <a href="#">Bike Race</a>
+                </p>
+                <p>
+                    <a href="#">National Spud Day</a>
+                </p>
+            </section>
+            <section class="card">
+                <div class="month">
+                    <ul>
+                      <li class="prev">&#10094;</li>
+                      <li class="next">&#10095;</li>
+                      <li>September<br><span style="font-size:18px">2023</span></li>
+                    </ul>
+                  </div>
+                  
+                  <ul class="weekdays">
+                    <li>Mo</li>
+                    <li>Tu</li>
+                    <li>We</li>
+                    <li>Th</li>
+                    <li>Fr</li>
+                    <li>Sa</li>
+                    <li>Su</li>
+                  </ul>
+                  
+                  <ul class="days">
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li><span class="active">30</span></li>
+                  </ul> 
+            </section>
+            <section class="card">
+                <h3>Attractions</h3>
+                <p>Boise National Forests</p>
+                <p>Bruneau Sand Dunes</p>
+                <p>World Center for Birds of Prey</p>
+            </section>
+            
+        </div>
+        <div class="imageArea">
+            <img src="images/city.webp" alt="A city skyline" loading="lazy">
+            <img src="images/forest.webp" alt="The Boise National Forest" loading="lazy">
+            <img src="images/balloons.webp" alt="A group of hot air balloons" loading="lazy">
+            <img src="images/bikes.webp" alt="A group of bikers racing through Boise" loading="lazy">
+            <img src="images/dunes.webp" alt="A person atop a sand dune" loading="lazy">
+            <img src="images/grill.webp" alt="A barbeque grill in use" loading="lazy">
+        </div>
+        
+    </main>
+    <footer>
+        <ul>
+            <li>Braxton Meyer</li>
+            <li>This webpage presently contains mostly fictitious information, created for the WDD230 course as an exercise in web frontend development</li>
+            <li>Contact creator at BraxtonLmeyer@gmail.com</li>
+        </ul>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/visitTracker.js"></script>
+</body>
+</html>

@@ -6,6 +6,26 @@
         grid-gap: 1rem;
     }
 
+    .sidebarMain {
+        grid-template: 1fr / 1fr 1fr 1fr;
+    }
+
+    .sidebar{
+        grid-column: 1/2;
+    }
+
+    .imageArea{
+        grid-column:2/4;
+    }
+
+    .imageArea img{
+        width: 100%;
+    }
+
+    .imageArea img:hover {
+        box-shadow: 0 0 50px #333;
+    }
+
     main h2 {
         text-align:left;
     }

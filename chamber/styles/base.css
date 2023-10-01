@@ -40,6 +40,10 @@ nav .active{
     background-color: rgba(0,0,0,0.3);
 }
 
+h1{
+    text-align:center;
+}
+
 /* small view navigation */
 #menu {
 	font-size: 1.5rem;
@@ -57,11 +61,26 @@ nav .active{
 	content: "X";
 }
 
-main {
+main{
     display: grid;
-    grid-template: 1fr / 1fr 1fr;
+    grid-template: 1fr / 1fr;
     grid-gap: 1rem;
     margin:2em;
+}
+
+.sidebarMain {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    grid-gap: 1rem;
+    margin:2em;
+}
+
+.sidebar section{
+    margin-top:0.5em;
+}
+
+.imageArea img{
+    width: 100%;
 }
 
 main h2 {
@@ -79,7 +98,7 @@ main h2 {
 }
 
 section{
-    grid-column: 1 / 4;
+    grid-column: span 2;
     border: 1px solid #545454;
     background-color: whitesmoke;
 }
@@ -126,4 +145,77 @@ footer li{
 footer p{
     grid-column: 1/4;
     text-align:center;
+}
+
+ul {list-style-type: none;}
+
+/* Month header */
+.month {
+  width: 100%;
+  background-color: #36A0E2;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+  text-wrap:nowrap;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 12.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 12.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background-color: #36A0E2;
+  color: black;
+  font-weight: bold;
 }
