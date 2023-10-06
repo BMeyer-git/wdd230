@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Braxton Meyer -  WDD 230 - Web Frontend Development</title>
+    <meta name="author" content="Braxton Meyer">
+    <meta name="description" content="Braxton Meyer's course assignment portal, created for the WDD 230 - Web Frontend Development course">
+    <meta property="og:title" content="Course Home Portal - WDD230 - Braxton Meyer">  
+    <meta property="og:type" content="website">  
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/5/5d/Boise%2C_Idaho_2021.jpg">
+    <meta property="og:url" content="https://bmeyer-git.github.io/wdd230/">    
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/braxton.webp" alt="Braxton Meyer Profile" width="75" height="100" loading="lazy">
+        <h1>Braxton Meyer</h1>
+        <div id="mode">☑️</div>
+    </header>
+    <nav>
+        <div id="menu"></div>
+        <a href="https://bmeyer-git.github.io/wdd230/index.html">Home</a>
+        <a href="https://bmeyer-git.github.io/wdd230/chamber/index.html">Chamber</a>
+        <a href="https://bmeyer-git.github.io/wdd230/week01/chamber-site-plan.html">Site Plan</a>
+        <a class="active" href="https://bmeyer-git.github.io/wdd230/form.html">form</a>
+    </nav>
+
+    <main>
+        <div id="formmessage"></div>
+        <form method="get" action="record.html">
+            <p class="smaller">All fields required</p>
+    
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="keyphrase">Password</label>
+            <input type="password" id="keyphrase" name="keyphrase" pattern="[a-zA-Z0-9].{7,}" placeholder="8 characters" required>
+            <label for="keyphrase2">Confirm Password</label>
+            <input type="password" id="keyphrase2" name="keyphrase2" pattern="[a-zA-Z0-9].{7,}" placeholder="8 characters"  required>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="please enter a valid email address"required>
+            <label for="rating">Website Rating</label>
+            <div id="rangevalue">5</div>
+            <input type="range" id="rating" name="rating" min="1" max="10" value="5" step="1" list="rangevalues">
+            <datalist id="rangevalues">
+	            <option value="1">1</option>
+	            <option value="2">2</option>
+	            <option value="3">3</option>
+	            <option value="4">4</option>
+	            <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </datalist>
+
+            <button id="btnSubmit" type="submit">Apply for Membership</button>
+        </form>
+    </main>
+
+    <footer>
+        <ul>
+            <li id="copyright"></li>
+            <li>Braxton Meyer</li>
+            <li>Idaho</li>
+        </ul>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/headerfooter.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>
