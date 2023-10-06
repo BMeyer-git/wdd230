@@ -6,7 +6,7 @@ kp2.addEventListener("focusout", checkSame);
 
 function checkSame() {
 	if (kp1.value !== kp2.value) {
-		message.textContent = "❗Key Phrases DO NOT MATCH!";
+		message.textContent = "❗Passwords DO NOT MATCH!";
 		message.style.display = "block";
 		kp2.value = "";
 		kp2.focus();
