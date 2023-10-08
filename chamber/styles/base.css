@@ -302,7 +302,46 @@ form label.top input:required:valid {
 
 
 /*----------- TABLE --------------*/
+#membershipTable{
+    display:table;
+}
 
-#membershipTable {
-    display:none;
+table {
+    margin: 10px auto;
+    border: thin solid var(--border);
+    border-collapse: collapse;
+    grid-column:1/2;
+    height: 75%;
+    width:100%;
+}
+
+caption {
+  padding: 5px;
+  caption-side: bottom;
+    color: var(--back);
+    font-size: .85rem;
+}
+
+thead:nth-child(2) :first-child {
+    background-color: var(--back);
+    color: var(--forelight);
+}
+
+th, td {
+    padding: 7px 15px;
+    border: 1px solid var(--borderlight);
+}
+
+th {
+    background-color: var(--back2);
+    font-size: larger;
+    height:50px;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra);
 }

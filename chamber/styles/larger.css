@@ -98,6 +98,7 @@
     th {
         background-color: var(--back2);
         font-size: larger;
+        height:50px;
     }
     
     td {
