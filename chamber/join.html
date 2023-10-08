@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boise Chamber of Commerce</title>
+    <meta name="author" content="Braxton Meyer">
+    <meta name="description" content="The Boise Chamber of Commerce website home page">
+    <meta property="og:title" content="Boise Chamber of Commerce">  
+    <meta property="og:type" content="website">  
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/5/5d/Boise%2C_Idaho_2021.jpg">
+    <meta property="og:url" content="https://bmeyer-git.github.io/wdd230/chamber/index.html">    
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <img src="#" alt="Boise Logo" width="75" height="100">
+        <h1>Boise, Idaho Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <div id="menu"></div>
+        <a href="https://bmeyer-git.github.io/wdd230/chamber/index.html">Home</a>
+        <a href="https://bmeyer-git.github.io/wdd230/chamber/discover.html">Discover</a>
+        <a href="#">Directory</a>
+        <a class="active" href="https://bmeyer-git.github.io/wdd230/chamber/join.html">Join</a>
+    </nav>
+    <main>
+        <h1>Chamber Membership Application</h1>
+        <form method="get" action="thankyou.html">
+        <fieldset>
+            <legend>Applicant Information</legend>
+            <label class="top">Current Date<input id="dateInput" type="hidden" name="submitDate"></label>
+            <label class="top">First Name* <input id="fname" type="text" name="fname" required></label>
+            <label class="top">Last Name* <input id="lname" type="text" name="lname" required></label>
+            <label class="top">Title/Position <input id="title" type="text" name="title" pattern=[A-Za-z0-9\s\-]{7,}></label>
+            <label class="top">Email* <input id="email" type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label class="top">Phone <input id="phone" type="tel" name="phone" placeholder="1235551234" required></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Business Information</legend>
+            <label class="top">Business Name* <input id="bname" type="text" name="bname" required></label>
+            <div>Membership Level</div>
+            <label class="sbs"><input type="radio" name="audience" value="beginner"> NP Membership</label>
+            <label class="sbs"><input type="radio" name="audience" value="beginner"> Bronze</label>
+            <label class="sbs"><input type="radio" name="audience" value="intermediate"> Silver</label>
+            <label class="sbs"><input type="radio" name="audience" value="Advanced"> Gold</label>
+            <label class="top">Business Description <textarea id="bdescription" type="text" name="bdescription"></textarea></label>
+        </fieldset>
+
+        <input type="submit" value="Join the Chamber" class="submitBtn">
+        </form>
+        <table id="membershipTable">
+            <caption>Table 1: Membership Level Benefits</caption>
+            <thead>
+                <tr>
+                    <th colspan="5" scope="colgroup">Membership Benefits</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th scope="col">NP</th>
+                    <th scope="col">Bronze</th>
+                    <th scope="col">Silver</th>
+                    <th scope="col">Gold</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Weekly Newsletter</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <td>Featured in directory</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <td>Premium Training Course</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <td>Spotlight Feature</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                </tr>
+            </tbody>
+        </table>
+        
+    </main>
+    <footer>
+        <ul>
+            <li>Braxton Meyer</li>
+            <li>This webpage presently contains mostly fictitious information, created for the WDD230 course as an exercise in web frontend development</li>
+            <li>Contact creator at BraxtonLmeyer@gmail.com</li>
+        </ul>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/join.js"></script>
+</body>
+</html>

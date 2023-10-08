@@ -1,3 +1,15 @@
+
+:root {
+    --back: rgb(38, 84, 115);
+    --back2: hsla(204, 50%, 30%, 0.5);
+    --foredark: hsla(0,0%,10%,1);
+    --forelight: hsla(0,0%,100%,1);
+    --border: hsla(0,0%,20%,.8);
+    --borderlight: hsla(0,0%,33%,.3);
+    --shadow: hsl(0,0%,50%);
+    --zebra: hsl(0, 0%, 93%, 1);
+}
+
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -81,6 +93,10 @@ main{
 
 .imageArea img{
     width: 100%;
+}
+
+main h1{
+    text-align:center;
 }
 
 main h2 {
@@ -217,4 +233,76 @@ ul {list-style-type: none;}
   background-color: #36A0E2;
   color: black;
   font-weight: bold;
+}
+
+/*----------- FORM --------------*/
+
+form {
+    grid-column: 1/2;
+    min-width:400px;
+}
+
+form fieldset {
+    margin: 2rem 0;
+    border: 3px solid #36A0E2;
+    border-radius: 10px;
+    padding: .5rem 2%;
+    max-width:400px;
+}
+form legend{
+    color: #36A0E2;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .8rem;
+}
+
+form label.top  input, textarea, form label.top select{
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 80%;
+    max-width: 20rem;
+    background-color: rgba(0,0,0,0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color:#9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border: green solid 6px;
+}
+
+
+/*----------- TABLE --------------*/
+
+#membershipTable {
+    display:none;
 }
