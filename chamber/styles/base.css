@@ -302,10 +302,6 @@ form label.top input:required:valid {
 
 
 /*----------- TABLE --------------*/
-#membershipTable{
-    display:table;
-}
-
 table {
     margin: 10px auto;
     border: thin solid var(--border);
