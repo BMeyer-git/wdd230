@@ -1,0 +1,27 @@
+body {
+    background-color:whitesmoke;
+}
+
+section{
+    background-color:lightblue;
+    border-color:black;
+    border-style: solid;
+    padding:1em;
+    margin-top:1em;
+    width:fit-content;
+    text-align:center;
+}
+
+#cards{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,
+    minmax(380px, 1fr));
+}
+
+section h2{
+    color:rgb(0, 0, 255);
+}
+
+section img{
+    width:340px;
+}

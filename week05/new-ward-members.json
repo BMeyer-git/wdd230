@@ -1,0 +1,25 @@
+{
+"familyName" : "Johnson",
+"moveDate" : "2000-01-01",
+"recordCount" : 3,
+"visited" : false,
+"members" : [
+    {
+        "name" : "Robert",
+        "male" : true,
+        "birthdate" : "1970-04-23"
+    },
+
+    {
+        "name" : "Stephanie",
+        "male" : false,
+        "birthdate" : "1972-01-15"
+    },
+
+    {
+        "name" : "Tim",
+        "male" : true,
+        "birthdate" : "1990-09-04"
+    }
+  ]
+}
