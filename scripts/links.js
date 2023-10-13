@@ -3,7 +3,7 @@ const linksURL = "https://bmeyer-git.github.io/wdd230/data/links.json";
 
 
 
-const cards = document.querySelector('#cards');
+const activities = document.querySelector('#activities');
 
 let results = null;
 
@@ -13,35 +13,23 @@ async function getLinks() {
     if (response.ok) {
         const data = await response.json();
         console.log(data);
-        //displayProphets(data.prophets);
+        displayLinks(data.weeks);
     }
 }
 
-const displayProphets = (prophets) => {
-    prophets.forEach((prophet) => {
-        let sec = document.createElement("section");
-        let fullName = document.createElement("h2");
-        let birthDate = document.createElement("h3");
-        let birthPlace = document.createElement("h3");
-        let portrait = document.createElement("img");
-        
-        fullName.textContent = prophet.name + " " + prophet.lastname;
+const displayLinks = (weeks) => {
+    weeks.forEach((week) => {
+        let li = document.createElement("li");
+        li.textContent = week.week + ": ";
 
-        birthDate.textContent = "Date of Birth: " + prophet.birthdate;
-        birthPlace.textContent = "Place of Birth: " + prophet.birthplace;
+        week.links.forEach((link) =>{
+            let anchor = document.createElement("a");
+            anchor.setAttribute("href",link.url);
+            anchor.textContent = link.title;
+            li.appendChild(anchor);
+        })
 
-        portrait.setAttribute("src", prophet.imageurl);
-        portrait.setAttribute("alt", "Portrait of " + prophet.name + " " + prophet.lastname);
-        portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '340');
-        portrait.setAttribute('height', '440');
-
-        sec.appendChild(fullName);
-        sec.appendChild(birthDate);
-        sec.appendChild(birthPlace);
-        sec.appendChild(portrait);
-
-        cards.appendChild(sec);
+        activities.appendChild(li);
     });
 }
 
