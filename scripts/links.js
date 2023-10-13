@@ -26,7 +26,11 @@ const displayLinks = (weeks) => {
             let anchor = document.createElement("a");
             anchor.setAttribute("href",link.url);
             anchor.textContent = link.title;
+
+            let space = document.createElement("span")
+            space.textContent = " ";
             li.appendChild(anchor);
+            li.appendChild(space);
         })
 
         activities.appendChild(li);
