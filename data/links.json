@@ -50,7 +50,7 @@
                 {
                     "url":"week03/responsive-images.html",
                     "title":"Responsive Images"
-                }
+                },
                 {
                     "url":"week03/bom.html",
                     "title":"Web Storage API"
@@ -77,7 +77,7 @@
                     "title":"Form Build"
                 }
             ]
-        }
+        },
         {
             "week": "Week 5",
             "links": [
