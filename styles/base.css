@@ -93,6 +93,10 @@ section{
     background-color: whitesmoke;
 }
 
+.card p {
+    text-align:center;
+}
+
 .dark section{
     background-color: #000;
 }
