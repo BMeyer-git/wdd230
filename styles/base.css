@@ -176,7 +176,6 @@ footer p{
 	padding: .25rem;
 	font-weight: 700;
 	font-size: 2rem;
-    text-wrap: nowrap;
 }
 
 #map, iframe{
