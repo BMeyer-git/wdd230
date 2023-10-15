@@ -19,12 +19,37 @@ async function getMembers() {
 
 const displayMembers = (members) => {
     members.forEach((member) => {
-        let li = document.createElement("li");
-        li.textContent = "Company Name: " + member.name;
+        let sec = document.createElement("section");
         
+        let image = document.createElement("img");
+        image.setAttribute("src",member.image);
+        image.setAttribute("alt",("Picture of " + member.name));
 
+        let h3 = document.createElement("h3");
+        h3.textContent = member.name
 
-        directory.appendChild(li);
+        let level = document.createElement("p");
+        level.textContent = member.membershipLevel + " Member"
+        level.setAttribute("class","membershipLabel")
+
+        let address = document.createElement("p");
+        address.textContent = member.address;
+
+        let phone = document.createElement("p");
+        phone.textContent = member.phone;
+
+        let anchor = document.createElement("a");
+        anchor.setAttribute("href",member.website);
+        anchor.textContent = "Link to website";
+
+        sec.appendChild(image);
+        sec.appendChild(h3);
+        sec.appendChild(level)
+        sec.appendChild(address);
+        sec.appendChild(phone)
+        sec.appendChild(anchor);
+
+        directory.appendChild(sec);
     });
 }
 
