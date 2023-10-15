@@ -73,11 +73,15 @@ h2{
 	content: "X";
 }
 
-main{
+main {
     display: grid;
     grid-template: 1fr / 1fr;
     grid-gap: 1rem;
     margin:2em;
+}
+
+#membersList {
+    grid-template: 1fr / 1fr;
 }
 
 .sidebarMain {
@@ -393,7 +397,7 @@ section {
 
 .list section {
 	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
+	grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
 	margin: 0;
 	padding: 0.25rem;
 }
