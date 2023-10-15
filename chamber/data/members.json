@@ -1,0 +1,68 @@
+{
+    "members": [
+        {
+            "name": "Lowry Dental",
+            "address": "9460 W Franklin Rd, Boise, ID", 
+            "Phone Number": "208-377-0410",
+            "website": "lowrydental.com",
+            "image": "images/lowrydental.webp",
+            "membershipLevel": "Gold"
+
+        },
+        {
+            "name": "Bacon Inc.",
+            "address": "3715 Tracy Hall Pkwy Ste 7, Provo, UT", 
+            "Phone Number": "435-292-8080",
+            "website": "baconwork.com",
+            "image": "images/bacon.webp",
+            "membershipLevel": "Gold"
+
+        },
+        {
+            "name": "Capital Eye Care",
+            "address": "6700 W Emerald St, Boise, ID", 
+            "Phone Number": "208-336-7100",
+            "website": "capitaleyecare.com",
+            "image": "images/capitaleyecare.webp",
+            "membershipLevel": "Silver"
+
+        },
+        {
+            "name": "Micron Technology",
+            "address": "8000 S Federal Way", 
+            "Phone Number": "208-368-4000",
+            "website": "micron.com",
+            "image": "images/micron.webp",
+            "membershipLevel": "Silver"
+
+        },
+        {
+            "name": "Waffle Me Up",
+            "address": "204 N Capitol Blvd", 
+            "Phone Number": "208-412-7253",
+            "website": "wafflemeupboise.com",
+            "image": "images/waffle.webp",
+            "membershipLevel": "Silver"
+
+        },
+        {
+            "name": "Cutting Edge Landscape",
+            "address": "5407 Alworth St, Garden City, ID", 
+            "Phone Number": "208-378-4588",
+            "website": "cuttingedgelandscape.com",
+            "image": "images/cuttingedge.webp",
+            "membershipLevel": "Bronze"
+
+        },
+        {
+            "name": "Cutco Cutlery",
+            "address": "4696 W. Overland Rd, Boise, ID", 
+            "Phone Number": "208-343-3833",
+            "website": "cutco.com",
+            "image": "images/cutco.webp",
+            "membershipLevel": "Bronze"
+
+        }
+        
+    ]
+}
