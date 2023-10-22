@@ -1,7 +1,6 @@
 
 const msToDays = 84600000;
 
-const theDateToday = new Date();
 const today = Date.now();
 
 let lastVisit = window.localStorage.getItem("lastVisit") || null;

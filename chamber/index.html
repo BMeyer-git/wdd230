@@ -32,26 +32,32 @@
     </nav>
     <img id="hero" src="images/hero.webp" alt="A picture of a cityscape">
     <main>
+        <div id="banner">
+            <div id="close"></div>
+        </div>
         <a id="recruit" href="#">Join today!</a>
-        <section class="card">
+        <section class="card" id="events">
             <h3>Current Events</h3>
             <p>Celebration of something fun</p>
             <p>Meeting over something important</p>
             <p>National/State holiday</p>
         </section>
         <section class="card">
-            <h3>Weather</h3>
-            <p>Boise, Idaho</p>
-            <p>68°F - Cloudy</p>
+            <h3>Weather</h3>     
+            <p>
+                <img id="weather-icon" src="" alt="">
+                <span id="current-temp"></span>°F -
+                <span id="weatherDescription"></span>
+            </p>
         </section>
-        <section class="card">
+        <section class="card" id="forecast">
+            <h3>Forecast</h3>         
+        </section>
+        <section class="card" id="spotlight1">
             <h3>Spotlight Company 1</h3>
-            <p>Jonathan's bricking and cement has been a long time member of the chamber of commerce...</p>
         </section>
-        <section class="card">
+        <section class="card" id="spotlight2">
             <h3>Spotlight Company 2</h3>
-            <p>If you've ever been downtown, then you likely have already heard of Mike's clown-style pizza...</p>
-        </section>
     </main>
     <footer>
         <ul>
@@ -62,5 +68,10 @@
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/index.js"></script>
+    <!--<script src="scripts/weather.js"></script>
+    <script src="scripts/forecast.js"></script>
+    -->
+    <script src="scripts/featured.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 </html>
