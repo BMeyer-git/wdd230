@@ -2,8 +2,6 @@ const today = new Date();
 
 const banner = document.querySelector("#banner");
 
-console.log(today.getDay());
-
 const closeButton = document.querySelector("#close");
 
 closeButton.addEventListener("click", () => {
