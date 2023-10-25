@@ -61,6 +61,10 @@
     
     }
 
+    .flagImage {
+        display:grid;
+    }
+
     form fieldset {
         max-width:100%;
     }
