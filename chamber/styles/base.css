@@ -37,7 +37,7 @@ nav a{
 }
 
 nav.open a{
-    color:black;
+    color:white;
     display: block;
     text-align:center;
     padding: .5rem;
