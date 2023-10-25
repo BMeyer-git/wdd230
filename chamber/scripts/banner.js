@@ -16,7 +16,7 @@ closeButton.addEventListener("click", () => {
 });
 
 
-if (today.getDay() > 0 && today.getDay < 4) {
+if (today.getDay() > 0 && today.getDay() < 4) {
     closeButton.textContent = "☑️";
     let bannerText = document.createElement("h1");
     bannerText.textContent = "Don't forget the Meet & Greet every Wednesday @7:00PM!";
